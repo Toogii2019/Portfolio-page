@@ -14,7 +14,7 @@ This repository hosts my personal portfolio page source code
 
  * [License](#license)
  
- * [Technologies] (#Technologies)
+ * [Technologies](#Technologies)
 
  * [Projects](#Projects)
 
