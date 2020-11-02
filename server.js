@@ -15,9 +15,17 @@ if (process.env.NODE_ENV === "production") {
 
 // Send every other request to the React app
 // Define any API routes before this runs
+
+require('./routes/apiRoutes')(app);
+
+app.get("/api/projects", (req, res) => {
+  console.log("Received");
+})
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

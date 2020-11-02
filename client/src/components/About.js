@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../style.css';
 
-export const About = (match) => {
+export const About = () => {
 
     return (
         <div className="showcase">
