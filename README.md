@@ -13,8 +13,10 @@ This repository hosts my personal portfolio page source code
  * [Usage](#usage)
 
  * [License](#license)
+ 
+ * [Technologies] (#Technologies)
 
- * [Contributing](#contributing)
+ * [Projects](#Projects)
 
  * [tests](#tests)
 
@@ -36,7 +38,11 @@ Deployed link: https://morning-springs-02786.herokuapp.com/
 ## License
 
  This project licensed under None license
+ 
+## Technologies
 
+ React.js - Front end
+ Express server - Back end
 
 ## Projects 
 
