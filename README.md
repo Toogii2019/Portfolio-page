@@ -16,7 +16,7 @@ This repository hosts my personal portfolio page source code
  
  * [Technologies](#Technologies)
 
- * [Projects](#Projects)
+ * [Projects included](#Projects included)
 
  * [tests](#tests)
 
@@ -44,7 +44,7 @@ Deployed link: https://morning-springs-02786.herokuapp.com/
  React.js - Front end
  Express server - Back end
 
-## Projects 
+## Projects included
 
 ### Password Generator App
 #### Generates highly secure password
