@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
 import AppRender from './App_info';
-export const Portfolio = (match) => {
+export const Portfolio = () => {
     
 
     const AppInfo = [
