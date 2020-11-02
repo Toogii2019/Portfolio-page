@@ -6,6 +6,10 @@ This repository hosts my personal portfolio page source code
 
 ![Github license](https://img.shields.io/badge/license-None-blue.svg)
 
+## Screenshot
+
+[](https://drive.google.com/file/d/1G4o7vEnlzJorVueZSwDpAi16rqf08YG0/view)
+
 ## Table of Content
 
  * [Installation](#installation)
