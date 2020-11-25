@@ -37,7 +37,7 @@ To install necessery dependencies, run the following command:
 
 ## Usage
 
-Deployed link: https://morning-springs-02786.herokuapp.com/
+Deployed link: https://toogii-profile-02786.herokuapp.com/
 
 ## License
 
