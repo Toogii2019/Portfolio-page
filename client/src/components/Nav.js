@@ -14,7 +14,7 @@ function Nav() {
           <ReactBootstrap.Nav.Link href="/about">About</ReactBootstrap.Nav.Link>
 
           <ReactBootstrap.NavDropdown title="Access to" id="collasible-nav-dropdown">
-            <ReactBootstrap.NavDropdown.Item href="https://drive.google.com/file/d/1ETUC7lx-GEipR05K_3H9BfdeJE3WX30f/view?usp=sharing" rel="noreferrer" target="_blank">My Resume</ReactBootstrap.NavDropdown.Item>
+            <ReactBootstrap.NavDropdown.Item href="https://drive.google.com/file/d/1md2vH-2hRcQrXcrH9jEG8EIr0DxA8UKA/view?usp=sharing" rel="noreferrer" target="_blank">My Resume</ReactBootstrap.NavDropdown.Item>
             <ReactBootstrap.NavDropdown.Item href="https://www.linkedin.com/in/toogii-dashdavaa-37851442/" rel="noreferrer" target="_blank">My LinkedIn</ReactBootstrap.NavDropdown.Item>
             <ReactBootstrap.NavDropdown.Item href="https://github.com/Toogii2019" rel="noreferrer" target="_blank">My Github</ReactBootstrap.NavDropdown.Item>
             <ReactBootstrap.NavDropdown.Divider />
