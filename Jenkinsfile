@@ -1,15 +1,22 @@
+
+CODE_CHANGES = getGitChanges()
 pipeline {
   agent any 
+  environment {
+    NEW_VERSION = '1.3.0'
+  }
   stages {
     stage("build") {
       steps {
-        sh "npm i --save"
+          echo "npm i --save"
+        echo "Version is ${NEW_VERSION}"
+        }
       }
       steps {
-        sh "cd client && npm i --save"
+        echo "cd client && npm i --save"
       }
       steps {
-        sh "npm run deploy"
+        echo "npm run deploy"
       }
     }
     stage("Deploy") {
