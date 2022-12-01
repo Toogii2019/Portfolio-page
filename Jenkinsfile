@@ -10,12 +10,8 @@ pipeline {
       steps {
           echo "npm i --save"
           echo "Version is ${NEW_VERSION}"
-      }
-      steps {
-        echo "cd client && npm i --save"
-      }
-      steps {
-        echo "npm run deploy"
+          echo "npm run deploy"
+          echo "cd client && npm i --save"
       }
     }
     stage("Deploy") {
