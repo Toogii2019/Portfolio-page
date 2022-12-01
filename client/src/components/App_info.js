@@ -11,8 +11,8 @@ function AppRender(props) {
       <div className="flip-box-back">
         <h2>{props.info.name}</h2>
         <p>{props.info.description}</p>
-        <a className="github-link" href={props.info.githubLink}  target="_blank">Github Link</a>
-        <a className="deployed-link" href={props.info.deployedLink}  target="_blank">Deployed Link</a>
+        <a className="github-link" href={props.info.githubLink}  target="_blank" rel="noreferrer">Github Link</a>
+        <a className="deployed-link" href={props.info.deployedLink}  target="_blank" rel="noreferrer">Deployed Link</a>
 
       </div>
     </div>
