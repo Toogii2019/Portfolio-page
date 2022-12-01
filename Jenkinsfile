@@ -3,6 +3,7 @@ pipeline {
   agent any 
   environment {
     NEW_VERSION = '1.3.0'
+    SERVER_CREDENTIALS = credentials('github_credentials')
   }
   stages {
     stage("build") {
