@@ -20,15 +20,4 @@ pipeline {
       }
     }
   }
-  posts {
-    always {
-      echo "Build completed"
-    }
-    failure {
-      echo "Build failed"
-    }
-    success {
-      echo "Build successful"
-    }
-  }
 }
