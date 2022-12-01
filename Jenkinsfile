@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        npm i --save
+        sh "npm i --save"
       }
       steps {
-        cd client && npm i --save
+        sh "cd client && npm i --save"
       }
       steps {
-        npm run deploy
+        sh "npm run deploy"
       }
     }
     stage("Deploy") {
