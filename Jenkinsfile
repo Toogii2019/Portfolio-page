@@ -9,8 +9,7 @@ pipeline {
     stage("build") {
       steps {
           echo "npm i --save"
-        echo "Version is ${NEW_VERSION}"
-        }
+          echo "Version is ${NEW_VERSION}"
       }
       steps {
         echo "cd client && npm i --save"
@@ -23,7 +22,6 @@ pipeline {
       steps {
         echo "Deploying"
       }
-      
     }
   }
   posts {
