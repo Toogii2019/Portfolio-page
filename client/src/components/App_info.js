@@ -6,7 +6,7 @@ function AppRender(props) {
     <div className="flip-box">
     <div className="flip-box-inner">
       <div className="flip-box-front">
-      <img src={ props.info.img } alt="app image" className="my-portfolio-images"></img>
+      <img src={ props.info.img } alt="app" className="my-portfolio"></img>
       </div>
       <div className="flip-box-back">
         <h2>{props.info.name}</h2>
