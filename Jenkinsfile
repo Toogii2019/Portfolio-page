@@ -1,4 +1,6 @@
 
+def gv
+
 pipeline {
   agent any 
   environment {
@@ -10,7 +12,7 @@ pipeline {
     booleanParam(name: 'executeTests', defaultValue: true, description: '')
   }
   tools {
-    maven: "Maven"
+    maven: 'Maven'
   }
   stages {
     stage("init") {
