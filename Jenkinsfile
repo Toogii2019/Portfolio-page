@@ -16,7 +16,7 @@ pipeline {
           sh "npm i --save"
           
           echo "cd client && npm i --save"
-          sh cd client && npm i --save
+          sh "cd client && npm i --save"
       }
     }
     stage("Deploy") {
