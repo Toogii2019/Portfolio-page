@@ -17,12 +17,13 @@ pipeline {
           
           echo "cd client && npm i --save"
           sh "cd client && npm i --save"
+          sh "npm run build"
       }
     }
     stage("Deploy") {
       steps {
         echo "Deploying"
-        sh "npm run deploy"
+
       }
     }
   }
