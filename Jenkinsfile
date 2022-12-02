@@ -30,6 +30,11 @@ pipeline {
       }
     }
     stage("Deploy") {
+      when {
+        expression {
+          BRANCH_NAME == 'master'
+        }
+      }
       input {
           message "Select the environment to deploy to"
           ok "Done"
