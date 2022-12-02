@@ -15,7 +15,13 @@ pipeline {
         script {
           gv = load "script.groovy"
         }
-    
+      }
+    }
+    stage("build") {
+      steps {
+        script {
+          gv.buildApp
+        }
       }
     }
     stage("Deploy") {
