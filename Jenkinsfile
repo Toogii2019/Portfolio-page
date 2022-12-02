@@ -11,7 +11,9 @@ pipeline {
         
           withCredentials([
             usernamePassword(credentials: 'github_credentials', usernameVariable: USER, passwordVariable: PWD)
-          ])
+          ]) {
+            echo "${USER} - ${PWD}"
+          }
           echo "npm i --save"
           sh "npm i --save"
           
