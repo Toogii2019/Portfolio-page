@@ -4,6 +4,7 @@ def buildApp() {
     echo "cd client && npm i --save"
     sh "cd client && npm i --save"
     sh "npm run build"  
+    sh "mvn --version"
 }
 
 
