@@ -2,21 +2,27 @@
 pipeline {
   agent any 
   environment {
-    NEW_VERSION = '1.3.0'
+    APP_VERSION = '1.3.0'
     SERVER_CREDENTIALS = credentials('github_credentials')
   }
   stages {
     stage("build") {
       steps {
+        
+          withCredentials([
+            usernamePassword(credentials: 'github_credentials', usernameVariable: USER, passwordVariable: PASS)
+          ])
           echo "npm i --save"
-          echo "Version is ${NEW_VERSION}"
-          echo "npm run deploy"
+          sh "npm i --save"
+          
           echo "cd client && npm i --save"
+          sh cd client && npm i --save
       }
     }
     stage("Deploy") {
       steps {
         echo "Deploying"
+        sh "npm run deploy"
       }
     }
   }
