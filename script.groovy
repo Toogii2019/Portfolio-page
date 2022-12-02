@@ -13,3 +13,5 @@ def deployApp() {
     echo "${SERVER_CREDENTIALS}"
     echo "${params.executeTests}"
 }
+
+return this
