@@ -10,7 +10,7 @@ pipeline {
       steps {
         
           withCredentials([
-            usernamePassword(credentials: 'github_credentials', usernameVariable: USER, passwordVariable: PASS)
+            usernamePassword(credentials: 'github_credentials', usernameVariable: USER, passwordVariable: PWD)
           ])
           echo "npm i --save"
           sh "npm i --save"
