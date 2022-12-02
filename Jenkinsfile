@@ -10,18 +10,12 @@ pipeline {
     booleanParam(name: 'executeTests', defaultValue: true, description: '')
   }
   stages {
-    stage("build") {
+    stage("init") {
       steps {
-        
-//           withCredentials([usernamePassword(credentials: 'github_credentials', usernameVariable: USER, passwordVariable: PWD)]) {
-//             echo "${USER} - ${PWD}"
-//           }
-          echo "npm i --save"
-          sh "npm i --save"
-          
-          echo "cd client && npm i --save"
-          sh "cd client && npm i --save"
-          sh "npm run build"
+        script {
+          gv = load "script.groovy"
+        }
+    
       }
     }
     stage("Deploy") {
