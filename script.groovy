@@ -1,15 +1,11 @@
 def buildApp() {
-    echo "npm i --save"
-    sh "npm i --save"
-    echo "cd client && npm i --save"
-    sh "cd client && npm i --save"
-    sh "npm run build"  
-    echo "Build completed"
+    echo "building Image"
+    docker build -t portfolio_app:lts .
 }
 
 
 def deployApp() {
-    echo "Deploying"
+    echo "Pushing"
     echo "${APP_VERSION}"
     echo "${SERVER_CREDENTIALS}"
     echo "${params.executeTests}"
