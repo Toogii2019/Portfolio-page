@@ -4,5 +4,7 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY ./ ./
 RUN npm i --save
+RUN cd client && npm i --save
+RUN npm run deploy
 EXPOSE 3000
-CMD [ "npm", "start"]
+CMD [ "npm", "run", "start"]
