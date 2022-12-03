@@ -5,9 +5,8 @@ def buildApp() {
 
 
 def deployApp() {
-    echo "Pushing"
+    echo "Deploying"
     echo "${APP_VERSION}"
-    echo "${SERVER_CREDENTIALS}"
     echo "${params.executeTests}"
 }
 
