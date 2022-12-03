@@ -21,7 +21,7 @@ pipeline {
     stage("build") {
       steps {
         script {
-          withCredentials([usernamePassword(credentialId: '225185c5-f79f-45f4-9f42-d44c75e422e8', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+          withCredentials([usernamePassword(credentialsId: '225185c5-f79f-45f4-9f42-d44c75e422e8', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
             sh "docker login dashdavaa/toogii:lts ."
             sh "echo ${PASS} | docker login -u ${USER} --password-stdin"
             sh 'docker push dashdavaa/toogii:lts'
