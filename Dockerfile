@@ -1,6 +1,8 @@
 FROM node:16-alpine 
 WORKDIR /app
-RUN npm ci 
-RUN npm run build
+COPY package.json ./
+COPY package-lock.json ./
+COPY ./ ./
+RUN npm i --save
 EXPOSE 3000
 CMD [ "npm", "start"]
