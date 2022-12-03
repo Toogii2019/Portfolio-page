@@ -1,6 +1,6 @@
 def buildApp() {
     echo "building Image"
-    docker build -t portfolio_app:lts .
+    sh "docker build -t portfolio_app:lts ."
 }
 
 
