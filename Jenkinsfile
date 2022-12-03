@@ -30,7 +30,7 @@ pipeline {
       // Only deploy if the branch is master          
       when {
         expression {
-          BRANCH_NAME == 'master'
+          BRANCH_NAME == 'jenkins_and_docker'
         }
       }
       input {
