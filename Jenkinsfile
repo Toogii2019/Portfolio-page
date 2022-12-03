@@ -35,7 +35,7 @@ pipeline {
       }
       steps {
         script {
-          echo "Deploying to ${ENV}"
+          echo "Deploying for ${BRANCH_NAME}"
           gv.deployApp()
         }
       }
